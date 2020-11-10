@@ -267,7 +267,7 @@ class ConversationFirstMenu:
             data = {}
 
         #Update user data
-        data[EarliestAncestor] = {"relations": ["Earliest Ancestor"], "gender": None, "selected": True}
+        data[EarliestAncestor] = {"relations": {"Earliest Ancestor": None}, "gender": None, "selected": True}
         context.bot_data[Message.from_user.id] = data
 
         #Save datafile
