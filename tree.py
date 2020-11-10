@@ -18,6 +18,7 @@ from telegram import (
     ReplyKeyboardMarkup , KeyboardButton,
     )
 import csv
+import config
 
 
 
@@ -567,7 +568,7 @@ def main():
     persistence = PicklePersistence('DATA')
     
     updater = Updater(
-        token = '1347685746:AAEldd4OUX-JOofIrg9N7bah6ly1yEzTCZ8',
+        token = config.TeleTestToken,
         use_context = True,
         persistence = persistence
         )
